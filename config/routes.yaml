@@ -1,3 +1,8 @@
+sujet:
+    path: /
+    controller: App\Controller\SujetController::add
+
+
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
