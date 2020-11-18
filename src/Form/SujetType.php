@@ -6,6 +6,7 @@ use App\Entity\Sujet;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class SujetType extends AbstractType
 {
@@ -14,7 +15,7 @@ class SujetType extends AbstractType
         $builder
             ->add('titre', null , ['label'=>'Nom du sujet:  '])
             ->add('type' , null , ['label'=>'Type du sujet  : '])
-            ->add('image' , null , ['label'=>'Photo du sujet  : '])
+            ->add('imageFile' , VichImageType::class , ['required'=>false ,'label'=>'Photo du sujet  : '])
         ;
     }
 
