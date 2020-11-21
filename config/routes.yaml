@@ -1,6 +1,11 @@
-sujet:
+remuneration:
     path: /
-    controller: App\Controller\SujetController::add
+    controller: App\Controller\RemunerationController::ChoixRemun
+
+
+#sujet:
+#    path: /
+ #   controller: App\Controller\SujetController::add
 
 
 #index:
